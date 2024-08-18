@@ -1,2 +1,3 @@
 # clipboard
-Helper functions for using the clipboard
+
+Helper functions for using the clipboard.

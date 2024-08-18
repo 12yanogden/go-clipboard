@@ -1,6 +1,6 @@
-module github.com/12yanogden/clipboard
+module github.com/12yanogden/go-clipboard
 
-go 1.21.5
+go 1.23.0
 
 require golang.design/x/clipboard v0.7.0
 
