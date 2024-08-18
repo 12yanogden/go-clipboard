@@ -18,7 +18,9 @@ jobs:
           go-version: "1.23"
 
       - name: Install dependencies
-        run: sudo apt install -y libx11-dev
+        run: |
+          sudo apt install -y libx11-dev
+          apt install -y xvfb
 
       - name: Test
         run: go test -v ./...
