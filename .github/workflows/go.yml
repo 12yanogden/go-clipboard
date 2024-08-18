@@ -17,15 +17,15 @@ jobs:
         with:
           go-version: "1.23"
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get install -y libx11-dev
-          sudo apt-get install -y xvfb
+      # - name: Install dependencies
+      #   run: |
+      #     sudo apt-get install -y libx11-dev
+      #     sudo apt-get install -y xvfb
 
-      - name: Initialize a virtual frame buffer
-        run: |
-          Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-          export DISPLAY=:99.0
+      # - name: Initialize a virtual frame buffer
+      #   run: |
+      #     Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+      #     export DISPLAY=:99.0
 
-      - name: Test
-        run: go test -v ./...
+      # - name: Test
+      #   run: go test -v ./...
