@@ -21,7 +21,7 @@ jobs:
         run: |
           sudo apt install -y libx11-dev
           sudo apt install -y xvfb
-          sudo Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+          Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
           export DISPLAY=:99.0
 
       - name: Test
