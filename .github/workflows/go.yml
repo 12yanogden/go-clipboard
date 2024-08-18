@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt install -y libx11-dev
-          apt install -y xvfb
+          sudo apt install -y xvfb
 
       - name: Test
         run: go test -v ./...
