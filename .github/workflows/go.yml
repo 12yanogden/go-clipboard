@@ -17,5 +17,8 @@ jobs:
         with:
           go-version: "1.23"
 
+      - name: Install dependencies
+        run: apt install -y libx11-dev
+
       - name: Test
         run: go test -v ./...
